@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<header><a href="about.html">About Ice Cream</a></header>
-		<h1>Ice Cream!</h1>
+		<h1>ICE CREAM!!!</h1>
 		<img src="Ice Cream.jpeg">
 		<p>This is a web page about ice cream!</p>
 		<h2>Benefits of Ice Cream</h2>
@@ -17,5 +17,78 @@
 			<li>Ice cream can reduce the risk of cancer!</li>
 			<li>Ice cream <strong>IS DELICIOUS!!!</strong></li>
 		</ul>
+
+		<h2>Order Ice Cream!</h2>
+		<p>Available options are below:</p>
+		<table border="1">
+			<tr>
+				<th colspan="4">Ice Cream Options</th>
+			</tr>
+			<tr>
+				<th>Flavors</th>
+				<th>Toppings</th>
+				<th>Containers</th>
+				<th>Size</th>
+			</tr>
+			<tr>
+				<td>Vanilla</td>
+				<td>Rainbow Sprinkles</td>
+				<td>Sugar Cone</td>
+				<td>Small</td>
+			</tr>
+			<tr>
+				<td>Chocolate</td>
+				<td>Oreos</td>
+				<td>Waffle Cone</td>
+				<td>Medium</td>
+			</tr>
+			<tr>
+				<td>Strawberry</td>
+				<td>Chocolate Fudge</td>
+				<td>Cup</td>
+				<td>Large</td>
+			</tr>
+		</table>
+		
+		<p>Place your order below!</p>
+		<form name="Ice Cream" action="https://httpbin.org/post" method="post">
+			<div>
+				<label>Flavor:</label>
+				<select name="flavor">
+					<option value="vanilla">Vanilla</option>
+					<option value="chocolate">Chocolate</option>
+					<option value="strawberry">Strawberry</option>
+				</select>
+			</div>
+			<div>
+				<label>Topping:</label>
+				<select name="topping">
+					<option value="rainbow sprinkles">Rainbow Sprinkles</option>
+					<option value="oreos">Oreos</option>
+					<option value="chocolate fudge">Chocolate Fudge</option>
+				</select>
+			</div>
+			<div>
+				<label>Container:</label>
+				<select name="container">
+					<option value="sugar cone">Sugar Cone</option>
+					<option value="waffle cone">Waffle Cone</option>
+					<option value="cup">Cup</option>
+				</select>
+			</div>
+			<div>
+				<label>Size:</label>
+				<select name="size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+				</select>
+			</div>
+			<div>
+				<label>Additional Instructions:</label>
+				<textarea name="addinfo"></textarea>
+			</div>
+			<button type="submit">Submit Order!!</button>
+		</form>
 	</body>
 </html>
