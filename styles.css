@@ -10,6 +10,16 @@ body {
 	background-image: url("Ice Cream Background.jpg");
 }
 
+.mainhead {
+	background-color: white;
+	padding: 7px;
+}
+
+#benefits {
+	margin-bottom: 50px;
+	margin-top: 35px;
+}
+
 #icecreamform {
 	border: 1px solid black;
 	padding: 10px;
@@ -64,6 +74,24 @@ hr {
 
 h1 {
 	font-style: italic;
+}
+
+body {
+	max-width: 920px;
+	margin:auto;
+}
+
+.contents {
+	background-color: white;
+	display: inline-block;
+	margin-left: 7%;
+	margin-right: 7%;
+	padding: 10px;
+}
+
+.bottom {
+	background-color: white;
+	padding: 10px;
 }
 
 @media screen and (max-width: 300px) {
